@@ -13,7 +13,7 @@ public class JavaBean {
 	public void connect() throws ClassNotFoundException, SQLException, Exception {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_pibd?useSSL=false", "root", "AnBuhY8F@a^U3e4");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_pibd?useSSL=false", "notroot", "pass123");
 		} catch (ClassNotFoundException cnfe) {
 			error = "ClassNotFoundException: Nu s-a gasit driverul bazei de date.";
 			throw new ClassNotFoundException(error);
